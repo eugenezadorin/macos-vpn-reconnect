@@ -5,10 +5,12 @@ Simple bash script to restore VPN connection from terminal.
 ## Setup
 
 ```
-# 1. Download script
-curl -o ~/vpnReconnect.sh https://raw.githubusercontent.com/eugenezadorin/macos-vpn-reconnect/main/vpnReconnect.sh
+# 1. Download script and inspect code, to be sure there is nothing criminal
+curl -o ~/vpnReconnect.sh \
+https://raw.githubusercontent.com/eugenezadorin/macos-vpn-reconnect/main/vpnReconnect.sh
 
-# 2. Inspect code, to be sure there is nothing criminal
+# 2. Make script executable
+chmod +x ~/vpnReconnect.sh
 
 # 3. Add an alias to your .bashrc/.zshrc file, specifying your connection name
 echo "alias vpn='~/vpnReconnect.sh --name MyNetworkName'" >> ~/.zshrc
@@ -26,6 +28,10 @@ vpn toggle # connect if disconnected, disconnect otherwize
 ```
 
 You can use `--name MyOtherNetwork` to run command with other network.
+
+## Upgrade
+
+Just remove old script, then see Setup. Step 3 (making alias) can be skipped.
 
 ## Notes
 

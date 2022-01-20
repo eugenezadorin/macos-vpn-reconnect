@@ -68,7 +68,7 @@ toggle() {
 reconnect() {
     if isConnected
     then
-        echo "Connected to ${name}"
+        echo "${name}: connected"
     else
         echo "Connecting to ${name}..."
         networksetup -connectpppoeservice "${name}"
