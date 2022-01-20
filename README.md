@@ -6,7 +6,7 @@ Simple bash script to restore VPN connection from terminal.
 
 ```
 # 1. Download script
-curl -o ~/vpnReconnect.sh https://...
+curl -o ~/vpnReconnect.sh https://raw.githubusercontent.com/eugenezadorin/macos-vpn-reconnect/main/vpnReconnect.sh
 
 # 2. Inspect code, to be sure there is nothing criminal
 
